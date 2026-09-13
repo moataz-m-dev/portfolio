@@ -1,583 +1,339 @@
-<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#131b2e", "secondary": "#89ceff", "on-secondary": "#00344d", "error": "#ffb4ab", "on-surface": "#dae2fd", "on-secondary-fixed": "#001e2f", "background": "#0b1326", "on-primary": "#00354a", "surface-variant": "#2d3449", "primary": "#8ed5ff", "on-error": "#690005", "on-tertiary-fixed": "#2a1700", "tertiary": "#ffc176", "on-background": "#dae2fd", "surface-container-highest": "#2d3449", "inverse-primary": "#00668a", "surface-container-lowest": "#060e20", "on-primary-fixed": "#001e2c", "surface-container": "#171f33", "inverse-on-surface": "#283044", "primary-fixed-dim": "#7bd0ff", "tertiary-fixed-dim": "#ffb960", "error-container": "#93000a", "on-surface-variant": "#bdc8d1", "surface-tint": "#7bd0ff", "on-secondary-fixed-variant": "#004c6e", "on-tertiary-fixed-variant": "#653e00", "surface-dim": "#0b1326", "surface-bright": "#31394d", "primary-fixed": "#c4e7ff", "surface-container-high": "#222a3d", "surface": "#0b1326", "tertiary-container": "#f1a02b", "on-secondary-container": "#00344e", "secondary-fixed-dim": "#89ceff", "secondary-fixed": "#c9e6ff", "tertiary-fixed": "#ffddb8", "inverse-surface": "#dae2fd", "on-tertiary-container": "#613b00", "on-primary-fixed-variant": "#004c69", "on-error-container": "#ffdad6", "outline": "#87929a", "primary-container": "#38bdf8", "on-primary-container": "#004965", "outline-variant": "#3e484f", "secondary-container": "#00a2e6", "on-tertiary": "#472a00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "margin": "2rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-md": "1rem", "space-sm": "0.5rem", "space-2xl": "4rem", "space-xs": "0.25rem", "margin-desktop": "4rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-sm": ["JetBrains Mono"], "code-sm": ["JetBrains Mono"], "body-md": ["Inter"], "code-md": ["JetBrains Mono"], "body-lg": ["Inter"], "label-md": ["JetBrains Mono"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "700" }], "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }], "code-sm": ["12px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }], "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }], "code-md": ["14px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="h-16 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="Moataz Mohamed Dev Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4kE-aae8ZNMt3vd49N9jB-BDFEmOBN2O3ixQ6cJ-tMX1Q3H5c9X1aM1EokovtYoTImlujQalk6gEN-zBBHEAf8CcS6NtyjhRxl4pSMwCkuC3X2r5HKRf2EsZIPOBu_zzROmyKVFm6vNPTvqzBXWFwLY-nV4QO-wmqoNFu2fE-g7muF1P0UDX_t-_T3KIpHcFXmC-mwifSpd5FZzCYeKIWXvYv7IyA715kb6gSV71C_SDV5y80Obk"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">Moataz Mohamed</span><div class="flex items-center gap-space-xs"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Available for hire</span></div></div></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#about">About</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#skills">Skills</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#services">Services</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#projects">Projects</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container transition-colors shadow-[0_0_12px_rgba(56,189,248,0.2)]" data-path="contact" href="#">Resume</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmhDsFVeaWMD_7vSWkvQdDr2SiaqDaCk3TMbUPQltRcbLF-2DiOGG9bwmJWc8SQ14OtvIs7SZduiQBWb7YdLVAvYfEnfy6l3ApgFgTDP02Yl1R5YMoXAjfXDnwBXwoZ2TT8ov4Yim9KpGZbf53v1-S1F2CSfhmIRT90bM3JIU8hGPEqNvZys8VG0zACZr_ANa60UW36xIrNlVys0P1u7ZS_kptOAIQC-wi3MUDeWbvyOXFTTCy0m4"></div></div></header><main class="w-full pt-16 bg-surface max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="flex flex-col w-full">
-<!-- ==================== HERO SECTION ==================== -->
-<section class="relative py-space-xl lg:py-space-2xl flex flex-col justify-center overflow-hidden" id="hero">
-<!-- Ambient glowing backdrop aura -->
-<div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
-<div class="absolute bottom-10 right-0 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-center relative z-10">
-<!-- Left Column: Copy & CTAs -->
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<!-- Eyebrow Tag -->
-<div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 rounded-full bg-surface-container-high shadow-sm">
-<span class="text-body-sm">👋</span>
-<span class="font-label-sm text-label-sm text-on-surface">Hi, I'm <strong class="font-semibold text-primary">Moataz Mohamed</strong></span>
-<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse ml-1"></span>
-<span class="font-label-sm text-label-sm text-primary tracking-wide">Available for Full-time &amp; Freelance Roles</span>
-</div>
-<!-- Headline & Tagline -->
-<div class="flex flex-col gap-space-xs">
-<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg tracking-tight text-on-surface font-extrabold">
-            Front-End <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary">Developer</span>
-</h1>
-<p class="font-headline-sm text-headline-sm text-primary-container font-medium">
-            Building responsive, modern, and clean web interfaces with React
-          </p>
-</div>
-<!-- Supporting text -->
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-          Focused on crafting pixel-perfect user interfaces, modular component architecture, and high-performance modern JavaScript applications with an obsessive eye for detail and usability.
-        </p>
-<!-- CTA Action Buttons -->
-<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
-<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(56,189,248,0.35)]" href="#contact">
-<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">mail</span>
-            Contact Me
-          </a>
-<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant hover:text-primary transition-all shadow-sm" href="#">
-<span class="material-symbols-outlined text-headline-sm">download</span>
-            Download CV
-          </a>
-</div>
-<!-- Inline Quick Social Touchpoints -->
-<div class="flex items-center gap-space-md pt-space-sm">
-<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Connect:</span>
-<div class="flex items-center gap-space-xs">
-<a aria-label="GitHub Profile" class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-primary transition-colors" href="https://github.com/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-headline-sm">terminal</span>
-</a>
-<a aria-label="LinkedIn Profile" class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com/in/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-headline-sm">hub</span>
-</a>
-<a aria-label="Direct Email" class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-primary transition-colors" href="mailto:moataz.mohamed.dev@example.com">
-<span class="material-symbols-outlined text-headline-sm">alternate_email</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Right Column: Interactive Code Console Node -->
-<div class="lg:col-span-5 relative">
-<div class="rounded-xl bg-surface-container-lowest shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden">
-<!-- IDE Chrome Bar -->
-<div class="flex items-center justify-between px-space-md py-space-xs bg-surface-container-low">
-<div class="flex items-center gap-space-xs">
-<span class="w-3 h-3 rounded-full bg-error inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-primary-container inline-block"></span>
-</div>
-<span class="font-code-sm text-code-sm text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-body-sm text-primary">data_object</span>
-              DeveloperProfile.tsx
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Moataz Mohamed - Front-End Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+  <style>
+    @layer base { 
+      html, body { margin: 0; padding: 0; } 
+      body { overscroll-behavior: none; } 
+      main > :first-child { margin-top: 0 !important; } 
+      main > :last-child { margin-bottom: 0 !important; } 
+    } 
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#131b2e",
+            "secondary": "#89ceff",
+            "on-secondary": "#00344d",
+            "error": "#ffb4ab",
+            "on-surface": "#dae2fd",
+            "on-secondary-fixed": "#001e2f",
+            "background": "#0b1326",
+            "on-primary": "#00354a",
+            "surface-variant": "#2d3449",
+            "primary": "#8ed5ff",
+            "on-error": "#690005",
+            "on-tertiary-fixed": "#2a1700",
+            "tertiary": "#ffc176",
+            "on-background": "#dae2fd",
+            "surface-container-highest": "#2d3449",
+            "inverse-primary": "#00668a",
+            "surface-container-lowest": "#060e20",
+            "on-primary-fixed": "#001e2c",
+            "surface-container": "#171f33",
+            "inverse-on-surface": "#283044",
+            "primary-fixed-dim": "#7bd0ff",
+            "tertiary-fixed-dim": "#ffb960",
+            "error-container": "#93000a",
+            "on-surface-variant": "#bdc8d1",
+            "surface-tint": "#7bd0ff",
+            "on-secondary-fixed-variant": "#004c6e",
+            "on-tertiary-fixed-variant": "#653e00",
+            "surface-dim": "#0b1326",
+            "surface-bright": "#31394d",
+            "primary-fixed": "#c4e7ff",
+            "surface-container-high": "#222a3d",
+            "surface": "#0b1326",
+            "tertiary-container": "#f1a02b",
+            "on-secondary-container": "#00344e",
+            "secondary-fixed-dim": "#89ceff",
+            "secondary-fixed": "#c9e6ff",
+            "tertiary-fixed": "#ffddb8",
+            "inverse-surface": "#dae2fd",
+            "on-tertiary-container": "#613b00",
+            "on-primary-fixed-variant": "#004c69",
+            "on-error-container": "#ffdad6",
+            "outline": "#87929a",
+            "primary-container": "#38bdf8",
+            "on-primary-container": "#004965",
+            "outline-variant": "#3e484f",
+            "secondary-container": "#00a2e6",
+            "on-tertiary": "#472a00"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "margin": "2rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "space-xs": "0.25rem",
+            "margin-desktop": "4rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem"
+          },
+          fontFamily: {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["JetBrains Mono"],
+            "code-sm": ["JetBrains Mono"],
+            "body-md": ["Inter"],
+            "code-md": ["JetBrains Mono"],
+            "body-lg": ["Inter"],
+            "label-md": ["JetBrains Mono"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+            "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "700" }],
+            "display-lg": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.06em", fontWeight: "500" }],
+            "code-sm": ["12px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }],
+            "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+            "code-md": ["14px", { lineHeight: "22px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+            "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "600" }],
+            "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "display-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "800" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.2)]">
+    <div class="h-16 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter">
+      <div class="flex items-center gap-space-md">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface">&lt;MoatazDev /&gt;</span>
+          <div class="flex items-center gap-space-xs">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-<button class="font-code-sm text-code-sm text-outline hover:text-primary transition-colors" id="copy-btn" onclick="navigator.clipboard.writeText('const Developer = { name: " moataz="" mohamed",="" role:="" "front-end="" developer",="" passions:="" ["react",="" "ui="" ux",="" "clean="" code"],="" status:="" "ready="" to="" build"="" };');="" this.innertext="Copied!" ;"="">
-              Copy
-            </button>
-</div>
-<!-- Code Snippet Body -->
-<div class="p-space-md font-code-md text-code-md leading-relaxed bg-surface-container-lowest text-on-surface-variant overflow-x-auto">
-<div class="text-outline select-none">// Synthesized Profile Blueprint</div>
-<div class="">
-<span class="text-secondary font-semibold">const</span>
-<span class="text-primary font-semibold">Developer</span>: 
-              <span class="text-tertiary">EngineerProfile</span> = {
-            </div>
-<div class="pl-space-md">
-<span class="text-on-surface">name</span>: 
-              <span class="text-primary">"Moataz Mohamed"</span>,
-            </div>
-<div class="pl-space-md">
-<span class="text-on-surface">role</span>: 
-              <span class="text-primary">"Front-End Developer"</span>,
-            </div>
-<div class="pl-space-md">
-<span class="text-on-surface">passions</span>: [
-              <span class="text-primary-container">"React"</span>, 
-              <span class="text-primary-container">"UI/UX"</span>, 
-              <span class="text-primary-container">"Clean Code"</span>
-              ],
-            </div>
-<div class="pl-space-md">
-<span class="text-on-surface">architecture</span>: 
-              <span class="text-primary">"Component-Driven"</span>,
-            </div>
-<div class="pl-space-md">
-<span class="text-on-surface">status</span>: 
-              <span class="text-tertiary font-medium">"Ready to build"</span>
-</div>
-<div class="">};</div>
-<div class="mt-space-xs text-outline select-none">// Live execution status</div>
-<div class="flex items-center gap-space-xs text-primary font-code-sm text-code-sm mt-1">
-<span class="material-symbols-outlined text-body-sm animate-spin">sync</span>
-<span class="">Compiling clean experiences...</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== ABOUT ME SECTION ==================== -->
-<section class="py-space-2xl scroll-mt-20" id="about">
-<!-- Section Header -->
-<div class="flex flex-col gap-space-xs mb-space-xl">
-<div class="flex items-center gap-space-xs">
-<span class="font-code-sm text-code-sm text-primary">01.</span>
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Background &amp; Journey</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">About Me</h2>
-</div>
-<!-- 2-Column Content Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
-<!-- Narrative Left Side -->
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<div class="p-space-lg rounded-xl bg-surface-container shadow-md flex flex-col gap-space-md">
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-            I am a dedicated Junior Front-End Developer with a rigorous academic grounding in Computer Science. My foundation in data structures, design algorithms, and modern software engineering principles equips me to write structured, scalable, and maintainable client-side code.
-          </p>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-            My passion centers squarely on the web ecosystem: turning intricate designs into responsive, fluid web applications powered by React and modern styling paradigms. I focus on optimizing render cycles, semantic accessibility, and modular component hierarchy.
-          </p>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-            Having collaborated across cross-functional student &amp; freelance projects, I thrive within Git-driven Agile workflows—seamlessly communicating with backend peers, participating in code reviews, and interpreting design handoffs with zero loss in fidelity.
-          </p>
-</div>
-<!-- Collaboration Highlight Card -->
-<div class="p-space-md rounded-xl bg-surface-container-high flex items-center gap-space-md shadow-sm">
-<div class="p-space-sm rounded-lg bg-primary/10 text-primary flex-shrink-0">
-<span class="material-symbols-outlined text-headline-md">group_work</span>
-</div>
-<div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Agile &amp; Team Mindset</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Active contributor in PR workflows, issue tracking, sprint milestones, and peer paired-programming sessions.</p>
-</div>
-</div>
-</div>
-<!-- Right Side: Stats & Metric Highlights Grid -->
-<div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
-<!-- Metric 1 -->
-<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.15)] transition-all">
-<div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary text-headline-md">school</span>
-<span class="font-code-sm text-code-sm text-outline">B.Sc.</span>
-</div>
-<div>
-<span class="font-headline-md text-headline-md text-on-surface font-bold">Education</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Computer Science Degree with focus on software engineering fundamentals.</p>
-</div>
-</div>
-<!-- Metric 2 -->
-<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.15)] transition-all">
-<div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-primary-container text-headline-md">code_blocks</span>
-<span class="font-code-sm text-code-sm text-primary">Core</span>
-</div>
-<div>
-<span class="font-headline-md text-headline-md text-on-surface font-bold">Experience</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Front-End Focus: React, modern ES6+, component lifecycle, and state logic.</p>
-</div>
-</div>
-<!-- Metric 3 -->
-<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.15)] transition-all">
-<div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-secondary text-headline-md">alt_route</span>
-<span class="font-code-sm text-code-sm text-outline">Git / CI</span>
-</div>
-<div>
-<span class="font-headline-md text-headline-md text-on-surface font-bold">Workflow</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Version control mastery, GitHub project tracking, branch strategies.</p>
-</div>
-</div>
-<!-- Metric 4 -->
-<div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.15)] transition-all">
-<div class="flex items-center justify-between">
-<span class="material-symbols-outlined text-tertiary text-headline-md">devices</span>
-<span class="font-code-sm text-code-sm text-outline">A11y &amp; Perf</span>
-</div>
-<div>
-<span class="font-headline-md text-headline-md text-on-surface font-bold">Clean Code</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Component-driven structure, clean naming, and responsive-first UI design.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== SKILLS SECTION ==================== -->
-<section class="py-space-2xl scroll-mt-20" id="skills">
-<!-- Section Header -->
-<div class="flex flex-col gap-space-xs mb-space-xl">
-<div class="flex items-center gap-space-xs">
-<span class="font-code-sm text-code-sm text-primary">02.</span>
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Technologies &amp; Tools I Work With Daily</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Technical Skills</h2>
-</div>
-<!-- Technical Cards Grid -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<!-- Skill 1: React -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-primary-container/10 text-primary group-hover:text-primary-container transition-colors">
-<span class="material-symbols-outlined text-headline-md">flutter</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container">Primary</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">React</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Hooks, Context API, component architecture, state management, and lifecycle optimization.
-        </p>
-</div>
-<!-- Skill 2: JavaScript -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-tertiary/10 text-tertiary">
-<span class="material-symbols-outlined text-headline-md">javascript</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">ES6+</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">JavaScript</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Async/Await, Promises, DOM manipulation, functional paradigms, and fetch/REST patterns.
-        </p>
-</div>
-<!-- Skill 3: Tailwind CSS -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-secondary/10 text-secondary">
-<span class="material-symbols-outlined text-headline-md">style</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Design System</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tailwind CSS</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Utility-first CSS, custom design tokens, dark mode theming, and responsive viewports.
-        </p>
-</div>
-<!-- Skill 4: HTML5 -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-surface-variant text-primary">
-<span class="material-symbols-outlined text-headline-md">html</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Structure</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">HTML5</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Semantic architecture, SEO fundamentals, Web Accessibility (ARIA), and layout structure.
-        </p>
-</div>
-<!-- Skill 5: CSS3 -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-surface-variant text-secondary">
-<span class="material-symbols-outlined text-headline-md">css</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Layout</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">CSS3</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Flexbox, Grid systems, keyframe animations, CSS variables, and fluid typography.
-        </p>
-</div>
-<!-- Skill 6: Git & GitHub -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-surface-variant text-primary-fixed">
-<span class="material-symbols-outlined text-headline-md">commit</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">VCS</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Git &amp; GitHub</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Branch workflows, Pull Requests, merge conflict resolution, and collaborative repositories.
-        </p>
-</div>
-<!-- Skill 7: MySQL -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-surface-variant text-tertiary">
-<span class="material-symbols-outlined text-headline-md">database</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Database</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">MySQL</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Relational database queries, schema organization, indexing, and foreign key relations.
-        </p>
-</div>
-<!-- Skill 8: PHP -->
-<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group">
-<div class="flex items-center justify-between mb-space-sm">
-<div class="p-2 rounded-lg bg-surface-variant text-on-surface-variant">
-<span class="material-symbols-outlined text-headline-md">api</span>
-</div>
-<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Backend Core</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">PHP</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-          Server-side fundamentals, RESTful endpoints integration, JSON encoding, and basic routing.
-        </p>
-</div>
-</div><div class="mt-space-xl pt-space-md"><div class="flex flex-col gap-space-xs mb-space-lg"><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-secondary">02.1</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Professional &amp; Interpersonal Strengths</span></div><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Soft Skills &amp; Collaboration</h3></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter"><div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group flex flex-col justify-between gap-space-sm"><div class="flex items-center justify-between"><div class="p-2 rounded-lg bg-primary-container/10 text-primary group-hover:text-primary-container transition-colors"><span class="material-symbols-outlined text-headline-md">psychology</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container">Critical Thinking</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Problem Solving</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Analytical mindset focused on breaking down complex UI/UX challenges, debugging efficiently, and finding elegant algorithmic solutions.</p></div></div><div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group flex flex-col justify-between gap-space-sm"><div class="flex items-center justify-between"><div class="p-2 rounded-lg bg-secondary/10 text-secondary"><span class="material-symbols-outlined text-headline-md">groups</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Agile Culture</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Team Collaboration</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Experienced in Git workflows, cross-functional communication with designers and backend developers, code reviews, and pair programming.</p></div></div><div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group flex flex-col justify-between gap-space-sm"><div class="flex items-center justify-between"><div class="p-2 rounded-lg bg-tertiary/10 text-tertiary"><span class="material-symbols-outlined text-headline-md">pace</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Sprint Delivery</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Time Management</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Proficient at prioritizing tasks, meeting project sprint milestones, estimating story points, and maintaining focused delivery pace.</p></div></div><div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group flex flex-col justify-between gap-space-sm"><div class="flex items-center justify-between"><div class="p-2 rounded-lg bg-primary/10 text-primary-fixed"><span class="material-symbols-outlined text-headline-md">center_focus_strong</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container">UI / UX Quality</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Attention to Detail</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Obsessive eye for pixel-perfect design translation, micro-interactions, responsive edge cases, typography rhythm, and semantic HTML.</p></div></div><div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 transition-all duration-300 shadow-md group flex flex-col justify-between gap-space-sm sm:col-span-2 lg:col-span-1"><div class="flex items-center justify-between"><div class="p-2 rounded-lg bg-secondary/10 text-primary"><span class="material-symbols-outlined text-headline-md">trending_up</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">Fast Learner</span></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Adaptability</h4><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Fast learner eager to master new frontend libraries, frameworks, evolving toolchains, and shifting project requirements with flexibility.</p></div></div></div></div>
-</section>
-<!-- ==================== PROJECTS GALLERY SECTION ==================== -->
-<section class="py-space-2xl scroll-mt-20" id="services"><div class="flex flex-col gap-space-xs mb-space-xl"><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-primary">03.</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">What I Offer &amp; Specialize In</span></div><h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Services</h2></div><div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter"><div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 shadow-md flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="p-2.5 rounded-xl bg-primary-container/10 text-primary-container group-hover:bg-primary-container/20 transition-colors"><span class="material-symbols-outlined text-headline-lg">devices</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container">Frontend Dev</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-space-xs">Design to HTML/React</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Pixel-perfect conversion of Figma, Adobe XD, and Sketch designs into clean, semantic, modern React and HTML5/CSS3 components.</p></div><div class="flex flex-wrap gap-1.5 pt-space-xs"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Figma to React</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Modular Components</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Pixel-Perfect</span></div></div><div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 shadow-md flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="p-2.5 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary/20 transition-colors"><span class="material-symbols-outlined text-headline-lg">view_quilt</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">UI Architecture</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-space-xs">Responsive Web Layouts</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Mobile-first, fluid responsive layouts crafted with Tailwind CSS and modern CSS Grid/Flexbox looking flawless across all viewports.</p></div><div class="flex flex-wrap gap-1.5 pt-space-xs"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Mobile-First</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tailwind CSS</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">CSS Grid / Flexbox</span></div></div><div class="p-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 shadow-md flex flex-col justify-between gap-space-md group"><div class="flex flex-col gap-space-sm"><div class="flex items-center justify-between"><div class="p-2.5 rounded-xl bg-tertiary/10 text-tertiary group-hover:bg-tertiary/20 transition-colors"><span class="material-symbols-outlined text-headline-lg">speed</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant">A11y &amp; Speed</span></div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-space-xs">Bug Fixing &amp; Optimization</h3><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Diagnosing layout shifts, fixing responsive glitches, optimizing rendering performance, and improving web accessibility.</p></div><div class="flex flex-wrap gap-1.5 pt-space-xs"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Performance</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Cross-Browser</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">A11y (ARIA)</span></div></div></div></section><section class="py-space-2xl scroll-mt-20" id="projects">
-<!-- Section Header -->
-<div class="flex flex-col gap-space-xs mb-space-xl">
-<div class="flex items-center gap-space-xs">
-<span class="font-code-sm text-code-sm text-primary">04.</span>
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Some Things I've Built &amp; Collaborated On</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Featured Projects</h2>
-</div>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
-<!-- Project 1: DevFlow -->
-<div class="rounded-xl bg-surface-container overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 flex flex-col">
-<!-- Visual App Mock Container -->
-<div class="h-52 bg-surface-container-lowest relative overflow-hidden flex flex-col p-4 justify-between">
-<img class="w-full h-full object-cover absolute inset-0 opacity-40 hover:opacity-60 transition-opacity" data-alt="A modern web dashboard interface mockup showcasing an agile sprint board with drag and drop task columns, dark blue theme with luminous cyan accent cards and activity widgets." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7rbNe51jX2rtBxneIhmwWWMLe_wf6phckZFngdYcGxvC79Ad9JPNmDWkWQqovjkKqshT4EKj7CHz53-eqOw-gJ4JcjVBZgXfAD5Cn00vQLLjUopEkY8deozwDmakwTdbUG6QHTN4Nt0xP6rtWVyV43oeLY_LWLgpoXarJls3Cis34yWG4XLSnROgPXIzC7mEfhMj04t0p8Js6Mc68aQ55TleN6Cgf7yxvxyLEGagqNn4ODuJKojI">
-<div class="relative z-10 flex justify-between items-center">
-<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-primary font-code-sm text-code-sm">04.</span>
-<span class="material-symbols-outlined text-primary text-body-md">view_kanban</span>
-</div>
-<div class="relative z-10 flex items-center gap-2">
-<div class="h-2 flex-1 rounded-full bg-surface-container-high overflow-hidden">
-<div class="h-full bg-primary-container w-3/4"></div>
-</div>
-<span class="font-code-sm text-code-sm text-on-surface">04.</span>
-</div>
-</div>
-<!-- Project Details -->
-<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">DevFlow</h3>
-<span class="font-label-sm text-label-sm text-primary">Developer Task &amp; Sprint Dashboard</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-1">
-              A responsive agile task board with drag-and-drop, filterable sprint boards, and real-time state updates built with React and Tailwind CSS.
-            </p>
-</div>
-<!-- Stack Pills -->
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">React</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tailwind CSS</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">JavaScript ES6+</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Git</span>
-</div>
-<!-- Project Actions -->
-<div class="flex items-center gap-space-sm pt-space-xs">
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container transition-colors" href="#">
-<span class="">Live Demo</span>
-<span class="material-symbols-outlined text-body-sm">open_in_new</span>
-</a>
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:text-primary transition-colors" href="https://github.com/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<span class="">GitHub Repo</span>
-<span class="material-symbols-outlined text-body-sm">code</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Project 2: ShopSphere -->
-<div class="rounded-xl bg-surface-container overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 flex flex-col">
-<!-- Visual App Mock Container -->
-<div class="h-52 bg-surface-container-lowest relative overflow-hidden flex flex-col p-4 justify-between">
-<img class="w-full h-full object-cover absolute inset-0 opacity-40 hover:opacity-60 transition-opacity" data-alt="A sleek dark modern e-commerce storefront web UI mockup displaying curated tech gadgets, shopping cart drawer preview, clean grid, with cyan and slate accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNmtxmXOF3unPpOR2_xXNqkWuOLMDeDqZ1XWd2g0xJxBy8wo7tJsqi64hRqGo8ceKtv_hlZcdIIhkCqSi3RbfVL9_ysFnDe8JoPbfcppqQvVQ-nI3AINQ_7cKIdlSUNQH8HUw0O7DnL_vJVGbkwZA5LDJt6GYqtclnnqxQjc0q40UMkovaExp_ZG8Z8xNt_C9WNpCDjdQ53X3K0IJkjhOS06-4yp8GLKuLhXnPBKp4fLi4SRskaug">
-<div class="relative z-10 flex justify-between items-center">
-<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-primary-container font-code-sm text-code-sm">04.</span>
-<span class="material-symbols-outlined text-primary-container text-body-md">shopping_bag</span>
-</div>
-<div class="relative z-10 inline-flex items-center gap-1 text-on-surface font-code-sm text-code-sm">
-<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
-<span class="">Cart Drawer Sync Active</span>
-</div>
-</div>
-<!-- Project Details -->
-<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">ShopSphere</h3>
-<span class="font-label-sm text-label-sm text-primary">Modern E-Commerce Platform</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-1">
-              High-performance online storefront featuring dynamic product filtering, slide-over cart drawer, checkout validation, and responsive mobile-first architecture.
-            </p>
-</div>
-<!-- Stack Pills -->
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">React</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">JavaScript</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tailwind CSS</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">MySQL</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">PHP API</span>
-</div>
-<!-- Project Actions -->
-<div class="flex items-center gap-space-sm pt-space-xs">
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container transition-colors" href="#">
-<span class="">Live Demo</span>
-<span class="material-symbols-outlined text-body-sm">open_in_new</span>
-</a>
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:text-primary transition-colors" href="https://github.com/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<span class="">GitHub Repo</span>
-<span class="material-symbols-outlined text-body-sm">code</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Project 3: CryptoPulse -->
-<div class="rounded-xl bg-surface-container overflow-hidden shadow-md hover:-translate-y-1 hover:shadow-[0_0_24px_rgba(56,189,248,0.2)] transition-all duration-300 flex flex-col">
-<!-- Visual App Mock Container -->
-<div class="h-52 bg-surface-container-lowest relative overflow-hidden flex flex-col p-4 justify-between">
-<img class="w-full h-full object-cover absolute inset-0 opacity-40 hover:opacity-60 transition-opacity" data-alt="A cryptocurrency dashboard web application UI mockup showing candlestick and neon cyan line charts, price ticker table, and dark mode interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzWPx8XwRWdyFHYXZMKY2ciMChPkMEkT3H5pMKVOOxdk2uanRiEv9-X-sjeu7st0U_6jCG07O6FYBtIskWRC2_d4lG5nKKW4vGH7JAfyvgbNWFTd9F-SmrcWrb3CNaAGwx2i1YevTNt_uwHU0LDBg-WuUeihKB3S7FWU10Gp2JEGgW5MUpyxYXjy21K4JkHAk27dbZElQneotRAbIUU9cxx4m0tL_VMeytGgbQXwQ_1vUg8peBGmU">
-<div class="relative z-10 flex justify-between items-center">
-<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-tertiary font-code-sm text-code-sm">04.</span>
-<span class="material-symbols-outlined text-tertiary text-body-md">monitoring</span>
-</div>
-<!-- Sparkline SVG Micro Graphic -->
-<div class="relative z-10 w-full">
-<svg class="w-full h-8 stroke-primary-container" fill="none" viewBox="0 0 100 20">
-<path d="M0 15 Q25 5 45 12 T90 4 T100 8" stroke-linecap="round" stroke-width="2"></path>
-</svg>
-</div>
-</div>
-<!-- Project Details -->
-<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
-<div class="flex flex-col gap-space-xs">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">CryptoPulse</h3>
-<span class="font-label-sm text-label-sm text-primary">Real-time Market Tracker</span>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-1">
-              Interactive cryptocurrency dashboard featuring live coin price tracking, instant search, customizable watchlists, and clean responsive charts.
-            </p>
-</div>
-<!-- Stack Pills -->
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">React</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">JavaScript</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Tailwind CSS</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">REST API</span>
-<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Git</span>
-</div>
-<!-- Project Actions -->
-<div class="flex items-center gap-space-sm pt-space-xs">
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container transition-colors" href="#">
-<span class="">Live Demo</span>
-<span class="material-symbols-outlined text-body-sm">open_in_new</span>
-</a>
-<a class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:text-primary transition-colors" href="https://github.com/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<span class="">GitHub Repo</span>
-<span class="material-symbols-outlined text-body-sm">code</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== CONTACT SECTION ==================== -->
-<section class="py-space-2xl scroll-mt-20" id="contact">
-<!-- Section Header -->
-<div class="flex flex-col gap-space-xs mb-space-xl">
-<div class="flex items-center gap-space-xs">
-<span class="font-code-sm text-code-sm text-primary">05.</span>
-<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Let's build something great together</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Get In Touch</h2>
-</div>
-<!-- Contact Split Layout -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl">
-<!-- Left Column: Contact Information & Direct Channels -->
-<div class="lg:col-span-5 flex flex-col gap-space-md">
-<div class="p-space-lg rounded-xl bg-surface-container flex flex-col gap-space-md shadow-md">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Contact Information</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Whether you have an open front-end position, a freelance project, or simply want to connect—my inbox is always open.
-          </p>
-<!-- Direct Email Block -->
-<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center justify-between">
-<div class="flex items-center gap-space-xs min-w-0">
-<span class="material-symbols-outlined text-primary">mail</span>
-<span class="font-code-sm text-code-sm text-on-surface truncate" id="email-text">05.</span>
-</div>
-<button class="p-1 rounded text-outline hover:text-primary transition-colors" onclick="navigator.clipboard.writeText('moataz.mohamed.dev@example.com'); alert('Email copied to clipboard!');" title="Copy email">
-<span class="material-symbols-outlined text-body-sm">content_copy</span>
-</button>
-</div>
-<!-- Social Details Links -->
-<div class="flex flex-col gap-space-xs">
-<a class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors group" href="https://github.com/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">terminal</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">GitHub</span>
-</div>
-<span class="font-code-sm text-code-sm text-outline group-hover:text-primary transition-colors">github.com/moataz-mohamed</span>
-</a>
-<a class="flex items-center justify-between p-space-sm rounded-lg hover:bg-surface-container-high transition-colors group" href="https://linkedin.com/in/moataz-mohamed" rel="noopener noreferrer" target="_blank">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">hub</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">LinkedIn</span>
-</div>
-<span class="font-code-sm text-code-sm text-outline group-hover:text-primary transition-colors">linkedin.com/in/moataz-mohamed</span>
-</a>
-<div class="flex items-center justify-between p-space-sm rounded-lg">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-on-surface-variant">location_on</span>
-<span class="font-body-md text-body-md text-on-surface font-medium">Location</span>
-</div>
-<span class="font-code-sm text-code-sm text-primary">05.</span>
-</div>
-</div>
-</div>
-<!-- Guarantees Card -->
-<div class="p-space-md rounded-xl bg-surface-container-high flex items-center gap-space-md shadow-sm">
-<span class="material-symbols-outlined text-headline-lg text-primary">schedule</span>
-<div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Fast Response Time</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">I typically review queries and reply within 24 hours.</p>
-</div>
-</div>
-</div>
-<!-- Right Column: Interactive Contact Form -->
-<div class="lg:col-span-7">
-<form class="p-space-lg rounded-xl bg-surface-container shadow-md flex flex-col gap-space-md" onsubmit="event.preventDefault(); document.getElementById('form-status').classList.remove('hidden');">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<!-- Name Input -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface" for="contact-name">Your Name</label>
-<input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="contact-name" placeholder="e.g. Alex Morgan" required="" type="text">
-</div>
-<!-- Email Input -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface" for="contact-email">Your Email</label>
-<input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="contact-email" placeholder="alex@company.com" required="" type="email">
-</div>
-</div>
-<!-- Subject Input -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface" for="contact-subject">Subject</label>
-<input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="contact-subject" placeholder="Front-End Role / Project Inquiry" required="" type="text">
-</div>
-<!-- Message Textarea -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-md text-label-md text-on-surface" for="contact-message">Message</label>
-<textarea class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary shadow-inner resize-none" id="contact-message" placeholder="Tell me about your team, the scope, or what you'd like to build..." required="" rows="5"></textarea>
-</div>
-<!-- Action Submission & Status -->
-<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
-<button class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container hover:scale-[1.01] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]" type="submit">
-<span class="">Send Message</span>
-<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">send</span>
-</button>
-<span class="font-label-sm text-label-sm text-outline flex items-center gap-1">
-<span class="material-symbols-outlined text-body-sm text-primary">lock</span>
-              No spam. Direct message dispatch.
-            </span>
-</div>
-<!-- Success Alert Message (Client side feedback) -->
-<div class="hidden p-space-sm rounded-lg bg-surface-container-high text-primary flex items-center gap-space-xs font-body-sm text-body-sm" id="form-status">
-<span class="material-symbols-outlined">check_circle</span>
-<span class="">Thank you! Your message has been received. I'll get back to you shortly.</span>
-</div>
-</form>
-</div>
-</div>
-</section>
-</div></main><footer class="w-full bg-surface-container-low mt-space-2xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl"><div class="flex flex-col md:flex-row items-center justify-between gap-gutter"><div class="flex flex-col items-center md:items-start gap-space-xs"><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Moataz Mohamed</span><span class="font-body-sm text-body-sm text-on-surface-variant">Junior Front-End Developer crafting technical, modern web interfaces.</span></div><div class="flex items-center gap-space-lg"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#about">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#skills">Skills</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#projects">Projects</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a></div><div class="flex items-center gap-space-md"><a aria-label="Code Repository" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm font-headline-sm">terminal</span></a><a aria-label="Professional Network" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm font-headline-sm">hub</span></a><a aria-label="Social Updates" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm font-headline-sm">share</span></a><a aria-label="Email Communication" class="p-space-xs text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-headline-sm font-headline-sm">mail</span></a></div></div><div class="mt-space-xl pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><p class="">© 2025 Moataz Mohamed. All rights reserved.</p><p class="text-outline font-code-sm text-code-sm">Built with precision &amp; Tailwind tokens.</p></div></div></footer>
+            <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Available for hire</span>
+          </div>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-space-lg">
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#about">About</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#skills">Skills</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#services">Services</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#projects">Projects</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-space-md">
+        <img alt="Moataz Mohamed Profile" class="w-10 h-10 rounded-full object-cover ring-2 ring-primary/40 object-top" src="profile.jpg">
+      </div>
+    </div>
+  </header>
 
+  <main class="w-full pt-16 bg-surface max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+    <div class="flex flex-col w-full">
+      
+      <!-- HERO SECTION -->
+      <section class="relative py-space-xl lg:py-space-2xl flex flex-col justify-center overflow-hidden" id="hero">
+        <div class="absolute top-1/4 -left-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-0 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-center relative z-10">
+          <!-- Copy & CTAs -->
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="inline-flex items-center gap-space-xs self-start px-space-md py-1 rounded-full bg-surface-container-high shadow-sm">
+              <span class="text-body-sm">👋</span>
+              <span class="font-label-sm text-label-sm text-on-surface">Hi, I'm <strong class="font-semibold text-primary">Moataz Mohamed</strong></span>
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-primary animate-pulse ml-1"></span>
+              <span class="font-label-sm text-label-sm text-primary tracking-wide">Available for Full-time &amp; Freelance Roles</span>
+            </div>
+            <div class="flex flex-col gap-space-xs">
+              <h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg tracking-tight text-on-surface font-extrabold">
+                Front-End <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-secondary">Developer</span>
+              </h1>
+              <p class="font-headline-sm text-headline-sm text-primary-container font-medium">
+                Building responsive, modern, and clean web interfaces with React &amp; JavaScript
+              </p>
+            </div>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+              Focused on crafting pixel-perfect user interfaces, modular component architecture, and high-performance modern web applications with solid computer science foundations.
+            </p>
+            <div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(56,189,248,0.35)]" href="#contact">
+                <span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">mail</span> Contact Me
+              </a>
+              <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant hover:text-primary transition-all shadow-sm" href="#projects">
+                <span class="material-symbols-outlined text-headline-sm">folder</span> View Projects
+              </a>
+            </div>
+          </div>
 
+          <!-- Hero Personal Image Card -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-72 h-96 lg:w-80 lg:h-[420px] rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)] border border-outline-variant/30 group">
+              <img src="profile.jpg" alt="Moataz Mohamed" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+              <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-surface-container-low/90 backdrop-blur-md border border-outline-variant/20">
+                <p class="font-headline-sm text-headline-sm font-bold text-on-surface">Moataz Mohamed</p>
+                <p class="font-label-sm text-label-sm text-primary">Front-End Developer &amp; CS Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</body></html>
+      <!-- ABOUT ME SECTION -->
+      <section class="py-space-2xl scroll-mt-20" id="about">
+        <div class="flex flex-col gap-space-xs mb-space-xl">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-code-sm text-code-sm text-primary">01.</span>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Background &amp; Journey</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">About Me</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-space-xl items-start">
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="p-space-lg rounded-xl bg-surface-container shadow-md flex flex-col gap-space-md">
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                I am a dedicated Junior Front-End Developer with a rigorous academic grounding in Computer Science. My foundation in data structures, algorithms, and database systems equips me to write structured, scalable, and maintainable client-side code.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                My passion centers on building clean web applications powered by React, HTML5, CSS3, JavaScript, and Tailwind CSS, backed by familiarity with backend tools like PHP and MySQL.
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+            <div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm">
+              <span class="material-symbols-outlined text-primary text-headline-md">school</span>
+              <div>
+                <span class="font-headline-md text-headline-md text-on-surface font-bold">Education</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Computer Science Student with software engineering focus.</p>
+              </div>
+            </div>
+            <div class="p-space-md rounded-xl bg-surface-container flex flex-col justify-between gap-space-md shadow-sm">
+              <span class="material-symbols-outlined text-primary-container text-headline-md">code_blocks</span>
+              <div>
+                <span class="font-headline-md text-headline-md text-on-surface font-bold">Core Stack</span>
+                <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">HTML, CSS, JavaScript, React, Tailwind CSS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="py-space-2xl scroll-mt-20" id="skills">
+        <div class="flex flex-col gap-space-xs mb-space-xl">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-code-sm text-code-sm text-primary">02.</span>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Technologies &amp; Tools</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Technical Skills</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+          <div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">React &amp; JS</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Components, ES6+, Hooks, State &amp; DOM Management.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tailwind CSS</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Responsive layouts, Utility-first styling &amp; Dark Mode.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Git &amp; GitHub</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Version control, Pull requests, and repo hosting.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-all shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">PHP &amp; MySQL</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Database design, SQL queries &amp; basic backend integration.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="py-space-2xl scroll-mt-20" id="services">
+        <div class="flex flex-col gap-space-xs mb-space-xl">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-code-sm text-code-sm text-primary">03.</span>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Solutions Provided</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Services</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="p-space-md rounded-xl bg-surface-container shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Design to Code</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Converting Figma/UI designs into clean HTML, CSS, JS or React code.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Responsive Web Layouts</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Building websites that adapt flawlessly to mobile, tablet, and desktop screens.</p>
+          </div>
+          <div class="p-space-md rounded-xl bg-surface-container shadow-md">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Bug Fixing &amp; Tweaks</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Resolving front-end layout bugs, responsiveness issues, and JS errors.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="py-space-2xl scroll-mt-20" id="projects">
+        <div class="flex flex-col gap-space-xs mb-space-xl">
+          <div class="flex items-center gap-space-xs">
+            <span class="font-code-sm text-code-sm text-primary">04.</span>
+            <span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">My Work</span>
+          </div>
+          <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Featured Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          <div class="p-space-lg rounded-xl bg-surface-container shadow-md border border-outline-variant/20">
+            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-2">Collaborative Student Web Project</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-4">A complete front-end &amp; database integration project built in a team environment using Git workflows.</p>
+            <div class="flex gap-2 text-xs font-mono text-primary">#React #TailwindCSS #Git #MySQL</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="py-space-2xl scroll-mt-20 text-center" id="contact">
+        <h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-4">Get In Touch</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto mb-6">Open for freelance projects and junior front-end opportunities. Let's build something clean and modern!</p>
+        <a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-secondary-container transition-all" href="mailto:your-email@example.com">
+          Send Email
+        </a>
+      </section>
+      
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-space-lg text-center text-on-surface-variant text-body-sm border-t border-surface-container-high bg-surface-container-lowest">
+    © 2026 Moataz Mohamed. All rights reserved.
+  </footer>
+
+</body>
+</html>
